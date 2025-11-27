@@ -1,0 +1,8 @@
+# ⚠️ 推測: App Hosting の設定形式として runtime/entrypoint/env を持つ構造を想定しています。必要に応じて実際の仕様に合わせてください。
+run_config:
+  runtime: nodejs20
+  entrypoint: npm run start
+
+env:
+  - variable: APPHOSTING_MESSAGE
+    value: "環境変数読み込み成功"
